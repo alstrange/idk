@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Archivo+Black&family=Francois+One&family=Josefin+Sans:wght@600&family=Jost:ital@1&family=Kanit&family=Lexend:wght@500;700&family=Noto+Sans+NKo+Unjoined:wght@700&family=Poppins:wght@300;400;500;600&family=Prompt:wght@500&family=Red+Rose&family=Sedgwick+Ave+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    background-color: darkolivegreen;
+}
+.container{
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background-color: ghostwhite;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px green;
+}
+.container header{
+    font-size:1.5rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+.container .from{
+    margin-top: 30px;
+}
+.from .input-box{
+    width: 100%;
+    margin-top: 20px;
+}
+.input-box label{
+    color: #333;
+}
+.form :where(.input-box input,.select-box){
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: rgb(21, 106, 181);
+    margin-top: 8px;
+    border: 1px solid rgb(117, 178, 105);
+    border-radius: 6px;
+    padding: 0 15px;
+}
+.form .column{
+    display: flex;
+    column-gap: 15px;
+}
+.form .gender-box{
+    margin-top: 20px; 
+}
+.gender-box h3{
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender){
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: ;
+}
+.form .gender{
+    column-gap: 5px;
+}
+.form :where(.gender input, .gender label){
+    cursor: pointer;
+}
+/* responsive */
+
+@media screen and (max-widht: 500px) {
+    .form .column{
+        flex-wrap: wrap;
+    }
+    .form :where(.gender-option, .gender){}
+    row-gap: 15px;
+}
